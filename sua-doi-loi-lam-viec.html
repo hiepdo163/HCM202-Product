@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--' + node.nodeValue + '--><!--' + node.nodeValue + '-->
 <html
-  data-wf-page="6074e88e167e5a00573d54ce"
+  data-wf-page="6074e88e167e5ac9393d54bc"
   data-wf-site="6074e88e167e5adf6d3d545c"
   class="w-mod-js w-mod-ix"
 >
@@ -12,10 +12,9 @@
       }
     </style>
     <meta charset="utf-8" />
-    <title>Nhật ký trong tù</title>
-    <meta content="Tác phẩm Nhật ký trong tù" name="description" />
-    <meta content="Nhật ký trong tù" property="og:title" />
-    <meta content="Nhật ký trong tù" property="twitter:title" />
+    <title>Sửa đổi lối làm việc</title>
+    <meta content="Sửa đổi lối làm việc" property="og:title" />
+    <meta content="Sửa đổi lối làm việc" property="twitter:title" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="Webflow" name="generator" />
     <link
@@ -23,6 +22,12 @@
       rel="stylesheet"
       type="text/css"
     />
+    <!--[if lt IE 9
+      ]><script
+        src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
+        type="text/javascript"
+      ></script
+    ><![endif]-->
     <script type="text/javascript">
       !(function (o, c) {
         var n = c.documentElement,
@@ -248,7 +253,138 @@
         color: #cfcfcf;
       }
     </style>
+    <!-- For Slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+    />
+
     <style>
+      .hollow-text-stroke {
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 1px #4c4d52;
+      }
+
+      /* Click Through */
+      .slider-hover {
+        pointer-events: none;
+      }
+
+      /* For Slider */
+
+      *:focus {
+        outline: 0;
+      }
+
+      /* For WW1 */
+      #ww1 .slick-dots {
+        bottom: -200px;
+      }
+
+      #ww1 .slick-dots:after {
+        position: relative;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-image: radial-gradient(
+          circle farthest-corner at 50% 50%,
+          #0f0f0f,
+          transparent
+        );
+      }
+
+      #ww1 .slick-dots li {
+        margin: 0 10%;
+        z-index: 1;
+      }
+
+      #ww1 .slick-dots li button:before {
+        margin-top: 15px;
+        width: 10px;
+        height: 10px;
+        content: "";
+        border-top-left-radius: 100%;
+        border-top-right-radius: 100%;
+        border-bottom-left-radius: 100%;
+        border-bottom-right-radius: 100%;
+        background-color: #4c4d52;
+        transition: all 0.3s ease;
+        opacity: 1;
+      }
+
+      #ww1 .slick-dots li.slick-active button:before {
+        opacity: 1;
+        color: #ff5b40;
+        box-shadow: 0 0 0 5px #e4e1de, 0 0 0 6px #ff5b40;
+        background-color: #ff5b40;
+        width: 20px;
+        height: 20px;
+        margin-top: 10px;
+      }
+
+      #ww1 div.slick-list.draggable {
+        margin-left: -8%;
+      }
+
+      #ww1 .slick-track {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: 550px;
+      }
+
+      #ww1 .slide-number {
+        font-size: 12px;
+        line-height: 148.5%;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        color: #0f0f0f;
+        transform: rotate(-90deg);
+        position: absolute;
+        bottom: 25px;
+      }
+
+      #ww1 li.slick-active p {
+        font-size: 16px;
+        color: #0f0f0f;
+      }
+
+      .ww1-grow {
+      }
+
+      @media screen and (max-width: 913px) {
+        #ww1 div.slick-list.draggable {
+          margin-left: 10%;
+          padding-left: 20%;
+        }
+
+        #ww1 .slick-dots {
+          bottom: -150px;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        #ww1 div.slick-list.draggable {
+          padding-bottom: 40px;
+        }
+
+        .ww1-grow {
+          /*
+      width: 155px;
+      height: 216px;
+      */
+        }
+
+        #ww1 .slick-track {
+          height: 300px;
+        }
+      }
+
       div.final-title.ft-active {
         -webkit-text-fill-color: #cfcfcf;
         -webkit-text-stroke: 0px #cfcfcf;
@@ -256,533 +392,143 @@
         color: #cfcfcf;
       }
     </style>
-    <style type="text/css">
-      #envidictionary * :not(svg, path) {
-        all: revert;
-      }
-      #envidictionary svg {
-        width: auto !important;
-      }
-      #envidictionary {
-        font-size: 18px !important;
-        font-family: Segoe UI, Arial, sans-serif !important;
-        color: #1f2328 !important;
-        line-height: 1.5 !important;
-        text-align: left !important;
-      }
-      #envidictionary .o-result-item {
-        line-height: 1.5;
-        display: block;
-        margin-right: 0;
-        cursor: pointer;
-      }
-      #envidictionary .o-result-item:hover {
-        border-color: #c6d6ef !important;
-      }
-      #envidictionary .o-selected-result {
-        max-height: 300px;
-        overflow-y: scroll;
-      }
-      #envidictionary .o-selected-result::-webkit-scrollbar {
-        width: 13px;
-      }
-      #envidictionary .o-selected-result::-webkit-scrollbar-thumb {
-        border-radius: 10px;
-        -webkit-box-shadow: inset 3px 0 0 3px #fff;
-        background: rgba(0, 0, 0, 0.2);
-      }
-      #envidictionary .o-pop-nav div {
-        font-size: 14px;
-        padding: 3.2px 8px;
-      }
-      #envidictionary .o-pop-speak {
-        margin-top: 5px;
-        margin-right: 8px;
-        font-size: 16px;
-        cursor: pointer;
-      }
-      #envidictionary .o-search-mobile {
-        z-index: 2147483647;
-        position: absolute;
-        cursor: pointer;
-        display: none;
-      }
-      #envidictionary .o-popup-tag {
-        z-index: 99999;
-        position: absolute;
-        display: none;
-        padding: 10px 5px 10px 10px;
-      }
-      #envidictionary .o-bg-white {
-        background-color: #fff !important;
-      }
-      #envidictionary .o-border {
-        border: 1px solid #dee2e6 !important;
-      }
-      #envidictionary .o-rounded {
-        border-radius: 4px !important;
-      }
-      #envidictionary .o-shadow {
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15) !important;
-      }
-      #envidictionary .o-btn-close {
-        box-sizing: content-box;
-        width: 16px;
-        height: 16px;
-        padding: 4px 4px;
-        color: #000;
-        background: transparent
-          url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3E%3C/svg%3E")
-          50%/16px auto no-repeat;
-        border: 0;
-        border-radius: 4px;
-        opacity: 0.5;
-        cursor: pointer;
-      }
-      #envidictionary .o-btn-close:hover {
-        opacity: 0.75;
-      }
-      #envidictionary .o-me-1 {
-        margin-right: 4px !important;
-      }
-      #envidictionary .o-end-0 {
-        right: 0 !important;
-      }
-      #envidictionary .o-top-0 {
-        top: 0 !important;
-      }
-      #envidictionary .o-position-absolute {
-        position: absolute !important;
-      }
-      #envidictionary ul {
-        padding-left: 32px;
-        display: block;
-        list-style-type: disc;
-        -webkit-margin-before: 16px;
-        margin-block-start: 16px;
-        -webkit-margin-after: 16px;
-        margin-block-end: 16px;
-        -webkit-margin-start: 0;
-        margin-inline-start: 0;
-        -webkit-margin-end: 0;
-        margin-inline-end: 0;
-        -webkit-padding-start: 40px;
-        padding-inline-start: 40px;
-      }
-      #envidictionary .o-pt-1 {
-        padding-top: 4px !important;
-      }
-      #envidictionary .mark,
-      #envidictionary mark {
-        padding: 0 !important;
-        background-color: #ffffe0 !important;
-      }
-      #envidictionary .o-mt-1 {
-        margin-top: 4px !important;
-      }
-      #envidictionary .o-p-2 {
-        padding: 8px !important;
-      }
-      #envidictionary .o-mb-1 {
-        margin-bottom: 4px !important;
-      }
-      #envidictionary .o-border-3 {
-        border-width: 3px !important;
-      }
-      #envidictionary .o-text-secondary {
-        color: #6c757d;
-      }
-      #envidictionary .o-speaking {
-        color: #0d6efd !important;
-      }
-      #envidictionary .o-text-primary {
-        color: #0d6efd;
-      }
-      #envidictionary .o-w-100 {
-        width: 100% !important;
-      }
-      #envidictionary .o-link-danger {
-        color: #dc3545;
-      }
-      #envidictionary .o-link-danger:hover {
-        color: #0d6efd;
-      }
-      #envidictionary .o-link-ah:hover {
-        color: #dc3545;
-      }
-      #envidictionary .o-text-decoration-none {
-        text-decoration: none !important;
-      }
-      #envidictionary .o-fs-6,
-      #envidictionary .o-small {
-        font-size: 16px !important;
-      }
-      #envidictionary .o-ms-1 {
-        margin-left: 4px !important;
-      }
-      #envidictionary .o-mt-2 {
-        margin-top: 8px !important;
-      }
-      #envidictionary .o-float-start {
-        float: left !important;
-      }
-      #envidictionary label {
-        display: inline-block;
-      }
-      #envidictionary .o-float-end {
-        float: right !important;
-      }
-      #envidictionary .o-float-end a:hover {
-        filter: brightness(95%);
-      }
-      #envidictionary .o-link-secondary {
-        color: #6c757d !important;
-      }
-      #envidictionary .o-result-item .o-inflect {
-        font-size: 14px;
-        color: #666;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-      #envidictionary .o-nav-tabs {
-        border-bottom: 1px solid #dee2e6;
-      }
-      #envidictionary .o-nav {
-        display: flex;
-        flex-wrap: wrap;
-        padding-left: 0;
-        margin-bottom: 0;
-        list-style: none;
-      }
-      #envidictionary ul {
-        margin-top: 0;
-        margin-bottom: 16px;
-      }
-      #envidictionary li {
-        display: list-item;
-        text-align: -webkit-match-parent;
-      }
-      #envidictionary .o-nav-tabs .o-nav-item.show .o-nav-link,
-      #envidictionary .o-nav-tabs .o-nav-link.o-active {
-        color: #495057;
-        background-color: #fff;
-        border-color: #dee2e6 #dee2e6 #fff;
-      }
-      #envidictionary .o-nav-link {
-        display: block;
-        padding: 8px 16px;
-        color: #0d6efd;
-        text-decoration: none;
-        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-          border-color 0.15s ease-in-out;
-        cursor: pointer;
-      }
-      #envidictionary .o-nav-tabs .o-nav-link {
-        margin-bottom: -1px;
-        background: 0 0;
-        border: 1px solid transparent;
-        border-top-left-radius: 4px;
-        border-top-right-radius: 4px;
-        line-height: 1.5;
-      }
-      #envidictionary svg:not(:host).o-svg-inline--fa,
-      #envidictionary svg:not(:root).o-svg-inline--fa {
-        overflow: visible;
-        box-sizing: content-box;
-      }
-      #envidictionary .o-svg-inline--fa {
-        display: inline-block;
-        height: 16px;
-        overflow: visible;
-        vertical-align: -2px;
-      }
-      #envidictionary .o-form-check {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.5;
-        color: #212529;
-        -webkit-text-size-adjust: 100%;
-        -webkit-tap-highlight-color: transparent;
-        box-sizing: border-box;
-        display: block;
-        min-height: 1.5rem;
-        padding-left: 1.5em;
-        margin-bottom: 0;
-      }
-      #envidictionary .o-form-check-input {
-        box-sizing: border-box;
-        margin: 0;
-        font-family: inherit;
-        font-size: inherit;
-        line-height: inherit;
-        width: 1em;
-        height: 1em;
-        margin-top: 0.25em;
-        vertical-align: top;
-        background-color: #fff;
-        background-repeat: no-repeat;
-        background-position: 50%;
-        background-size: contain;
-        border: 1px solid rgba(0, 0, 0, 0.25);
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        -webkit-print-color-adjust: exact;
-        float: left;
-        margin-left: -1.5em;
-        border-radius: 0.25em;
-      }
-      #envidictionary .o-form-check-input:before {
-        content: "";
-      }
-      #envidictionary .o-form-check-input:checked[type="checkbox"] {
-        background-color: #0d6efd;
-        border-color: #0d6efd;
-        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3 6-6'/%3E%3C/svg%3E");
-      }
-      #envidictionary del {
-        color: #6c757d !important;
-      }
-      #envidictionary .o-link-primary {
-        color: #0d6efd !important;
-      }
-      #envidictionary .o-link-primary:focus,
-      #envidictionary .o-link-primary:hover {
-        color: #0a58ca !important;
-        text-decoration: underline !important;
-      }
-      #envidictionary .o-cpt {
-        cursor: pointer !important;
-      }
-      #envidictionary .o-fs-3 {
-        font-size: calc(1.3rem + 0.6vw) !important;
-      }
-      #envidictionary .o-fw-bold {
-        font-weight: 700 !important;
-      }
-      #envidictionary .o-fs-5 {
-        font-size: 1.25rem !important;
-      }
-      #envidictionary .o-ms-2 {
-        margin-left: 0.5rem !important;
-      }
-      #envidictionary .o-border-start {
-        border-left: 1px solid #dee2e6 !important;
-      }
-      #envidictionary .o-border-warning {
-        border-color: #ffc107 !important;
-      }
-      #envidictionary .o-border-5 {
-        border-width: 5px !important;
-      }
-      #envidictionary .o-ps-2 {
-        padding-left: 0.5rem !important;
-      }
-      #envidictionary .o-mt-3 {
-        margin-top: 1rem !important;
-      }
-      #envidictionary .o-text-success {
-        color: #198754 !important;
-      }
-      #envidictionary .o-mb-2 {
-        margin-bottom: 0.5rem !important;
-      }
-      #envidictionary a {
-        color: #0d6efd !important;
-        text-decoration: underline !important;
-      }
-      #envidictionary mark {
-        padding: 0 !important;
-        background: linear-gradient(transparent 70%, #ff6 0) !important;
-      }
-      #envidictionary .o-analysis span {
-        cursor: pointer;
-      }
-      #envidictionary .o-analysis span:hover {
-        color: #0d6efd;
-        text-decoration: underline;
-      }
-      @media (min-width: 1200px) {
-        #envidictionary .o-fs-3 {
-          font-size: 1.75rem !important;
-        }
-      }
-      #gtx-trans {
-        z-index: 2147483637 !important;
-      }
-    </style>
-    <style id="mttstyle">
-      #mttContainer {
-        left: 0 !important;
-        top: 0 !important;
-        position: fixed !important;
-        z-index: 100000200 !important;
-        width: 1000px !important;
-        margin-left: -500px !important;
-        background-color: #00000000 !important;
-        pointer-events: none !important;
-      }
-      .bootstrapiso .tooltip {
-        width: auto !important;
-        height: auto !important;
-        background: transparent !important;
-        border: none !important;
-        border-radius: 0px !important;
-        visibility: visible !important;
-        pointer-events: none !important;
-      }
-      .bootstrapiso .tooltip-inner {
-        font-size: 14px !important;
-        max-width: 200px !important;
-        text-align: center !important;
-        backdrop-filter: blur(15px) !important;
-        background-color: #e6f9ff !important;
-        color: #000 !important;
-        border-radius: 0.25rem !important;
-        pointer-events: none !important;
-      }
-      .bootstrapiso .arrow::before {
-        border-top-color: #b3ecff !important;
-        border-bottom-color: #b3ecff !important;
-      }
-    </style>
     <meta
       name="generator"
-      value="Saved inlined page from https://climatehistory.webflow.io/paris-agreement on Thu Feb 13 2025 13:33:59 GMT+0700 (Indochina Time)"
+      value="Saved inlined page from https://climatehistory.webflow.io/the-kyoto-protocol on Thu Feb 20 2025 13:21:37 GMT+0700 (Indochina Time)"
     />
-    <!---<base href="https://disantutuongvatacpham.vercel.app/duong-kach-menh" />--->
+    <!-- <base href="https://climatehistory.webflow.io/the-kyoto-protocol" /> -->
   </head>
-  <body class="fade-out" style="height: 9000px">
+  <body class="fade-out" style="height: 7600px">
     <div style="opacity: 0" class="black-entrance">
       <div style="opacity: 1" class="chapter-hover-2">
         <div
           class="tomato-text"
           style="
-            will-change: transform;
-            transform: translate3d(-187.874%, 0px, 0px) scale3d(1, 1, 1)
+            transform: translate3d(-200%, 0px, 0px) scale3d(1, 1, 1)
               rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
             transform-style: preserve-3d;
+            will-change: transform;
           "
         >
-          <div class="menu-title">Nhật ký trong tù</div>
-          <div class="year-2">1942-1943</div>
+          <div class="menu-title">Sửa đổi lối làm việc</div>
+          <div class="year-2">1947</div>
           <div class="tomato-line-2"></div>
         </div>
         <div
           class="tomato-text"
           style="
-            will-change: transform;
-            transform: translate3d(-187.874%, 0px, 0px) scale3d(1, 1, 1)
+            transform: translate3d(-200%, 0px, 0px) scale3d(1, 1, 1)
               rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
             transform-style: preserve-3d;
+            will-change: transform;
           "
         >
-          <div class="menu-title">Nhật ký trong tù</div>
-          <div class="year-2">1942-1943</div>
+          <div class="menu-title">Sửa đổi lối làm việc</div>
+          <div class="year-2">1947</div>
           <div class="tomato-line-2"></div>
         </div>
         <div
           class="tomato-text"
           style="
-            will-change: transform;
-            transform: translate3d(-187.874%, 0px, 0px) scale3d(1, 1, 1)
+            transform: translate3d(-200%, 0px, 0px) scale3d(1, 1, 1)
               rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
             transform-style: preserve-3d;
+            will-change: transform;
           "
         >
-          <div class="menu-title">Nhật ký trong tù</div>
-          <div class="year-2">1942-1943</div>
+          <div class="menu-title">Sửa đổi lối làm việc</div>
+          <div class="year-2">1947</div>
           <div class="tomato-line-2"></div>
         </div>
         <div
           class="tomato-text"
           style="
-            will-change: transform;
-            transform: translate3d(-187.874%, 0px, 0px) scale3d(1, 1, 1)
+            transform: translate3d(-200%, 0px, 0px) scale3d(1, 1, 1)
               rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
             transform-style: preserve-3d;
+            will-change: transform;
           "
         >
-          <div class="menu-title">Nhật ký trong tù</div>
-          <div class="year-2">1942-1943</div>
+          <div class="menu-title">Sửa đổi lối làm việc</div>
+          <div class="year-2">1947</div>
           <div class="tomato-line-2"></div>
         </div>
         <div
           class="tomato-text"
           style="
-            will-change: transform;
-            transform: translate3d(-187.874%, 0px, 0px) scale3d(1, 1, 1)
+            transform: translate3d(-200%, 0px, 0px) scale3d(1, 1, 1)
               rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
             transform-style: preserve-3d;
+            will-change: transform;
           "
         >
-          <div class="menu-title">Nhật ký trong tù</div>
-          <div class="year-2">1942-1943</div>
+          <div class="menu-title">Sửa đổi lối làm việc</div>
+          <div class="year-2">1947</div>
           <div class="tomato-line-2"></div>
         </div>
         <div
           class="tomato-text"
           style="
-            will-change: transform;
-            transform: translate3d(-187.874%, 0px, 0px) scale3d(1, 1, 1)
+            transform: translate3d(-200%, 0px, 0px) scale3d(1, 1, 1)
               rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
             transform-style: preserve-3d;
+            will-change: transform;
           "
         >
-          <div class="menu-title">Nhật ký trong tù</div>
-          <div class="year-2">1942-1943</div>
+          <div class="menu-title">Sửa đổi lối làm việc</div>
+          <div class="year-2">1947</div>
           <div class="tomato-line-2"></div>
         </div>
         <div
           class="tomato-text"
           style="
-            will-change: transform;
-            transform: translate3d(-187.874%, 0px, 0px) scale3d(1, 1, 1)
+            transform: translate3d(-200%, 0px, 0px) scale3d(1, 1, 1)
               rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
             transform-style: preserve-3d;
+            will-change: transform;
           "
         >
-          <div class="menu-title">Nhật ký trong tù</div>
-          <div class="year-2">1942-1943</div>
+          <div class="menu-title">Sửa đổi lối làm việc</div>
+          <div class="year-2">1947</div>
           <div class="tomato-line-2"></div>
         </div>
         <div
           class="tomato-text"
           style="
-            will-change: transform;
-            transform: translate3d(-187.874%, 0px, 0px) scale3d(1, 1, 1)
+            transform: translate3d(-200%, 0px, 0px) scale3d(1, 1, 1)
               rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
             transform-style: preserve-3d;
+            will-change: transform;
           "
         >
-          <div class="menu-title">Nhật ký trong tù</div>
-          <div class="year-2">1942-1943</div>
+          <div class="menu-title">Sửa đổi lối làm việc</div>
+          <div class="year-2">1947</div>
           <div class="tomato-line-2"></div>
         </div>
         <div
           class="tomato-text"
           style="
-            will-change: transform;
-            transform: translate3d(-187.874%, 0px, 0px) scale3d(1, 1, 1)
+            transform: translate3d(-200%, 0px, 0px) scale3d(1, 1, 1)
               rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
             transform-style: preserve-3d;
+            will-change: transform;
           "
         >
-          <div class="menu-title">Nhật ký trong tù</div>
-          <div class="year-2">1942-1943</div>
+          <div class="menu-title">Sửa đổi lối làm việc</div>
+          <div class="year-2">1947</div>
           <div class="tomato-line-2"></div>
         </div>
         <div
           class="tomato-text"
           style="
-            will-change: transform;
-            transform: translate3d(-187.874%, 0px, 0px) scale3d(1, 1, 1)
+            transform: translate3d(-200%, 0px, 0px) scale3d(1, 1, 1)
               rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
             transform-style: preserve-3d;
+            will-change: transform;
           "
         >
-          <div class="menu-title">Nhật ký trong tù</div>
-          <div class="year-2">1942-1943</div>
+          <div class="menu-title">Sửa đổi lối làm việc</div>
+          <div class="year-2">1947</div>
           <div class="tomato-line-2"></div>
         </div>
       </div>
@@ -861,12 +607,15 @@
           >
             <div class="row-1 hodol">
               <div class="final-year-block">
-                <div class="final-year">1919</div>
+                <div class="final-year">1947</div>
               </div>
-              <div class="final-title">Yêu sách của<br />nhân dân An Nam</div>
+              <div class="final-title">
+                Sửa đổi <br />
+                lối làm việc
+              </div>
             </div>
             <a
-              data-w-id="fd667a79-41f1-ea86-7302-08714cfbd70e"
+              data-w-id="de4f00f8-bb2f-75ac-f183-5ffe4c44e714"
               href="https://disantutuongvatacpham.vercel.app/yeu-sach-cua-nhan-dan-an-nam.html"
               class="row-1 a _02 customtrans w-inline-block"
               ><div class="final-year-block">
@@ -876,28 +625,27 @@
                 Yêu sách của<br />nhân dân An Nam
               </div></a
             ><a
-              data-w-id="fd667a79-41f1-ea86-7302-08714cfbd716"
+              data-w-id="de4f00f8-bb2f-75ac-f183-5ffe4c44e71c"
               href="https://disantutuongvatacpham.vercel.app/nhat-ky-trong-tu.html"
-              class="row-1 b _02 customtrans w-inline-block"
-            >
-              <div class="final-year-block">
-                <div class="final-year" style="color: #cfcfcf">
-                  1942<br />-1943
-                </div>
-              </div>
-              <div class="final-title ft-active">Nhật ký<br />trong tù</div> </a
-            ><a
-              data-w-id="fd667a79-41f1-ea86-7302-08714cfbd71c"
-              href="https://disantutuongvatacpham.vercel.app/sua-doi-loi-lam-viec.html"
-              class="row-1 c customtrans w-inline-block"
+              class="row-1 b customtrans w-inline-block"
               ><div class="final-year-block">
-                <div class="final-year">1947</div>
+                <div class="final-year">1943</div>
               </div>
-              <div class="final-title">Sửa đổi<br />lối làm việc</div></a
+              <div class="final-title">Nhật ký<br />trong tù</div></a
+            ><a
+              data-w-id="de4f00f8-bb2f-75ac-f183-5ffe4c44e722"
+              href="https://disantutuongvatacpham.vercel.app/sua-doi-loi-lam-viec.html"
+              class="row-1 c _03 customtrans w-inline-block"
+              ><div class="final-year-block">
+                <div class="final-year" style="color: #cfcfcf">1947</div>
+              </div>
+              <div class="final-title ft-active">
+                Sửa đổi<br />lối làm việc
+              </div></a
             >
           </div>
           <div
-            id="w-node-_5bcebf1a-2712-37ab-742f-eec0f66c560b-573d54ce"
+            id="w-node-_412d59da-284e-58b0-92ff-7d2a86c7d364-393d54bc"
             class="final-image-container"
           >
             <div
@@ -907,7 +655,7 @@
                 transform: translate3d(0px, 5vh, 0px) scale3d(1, 1, 1)
                   rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
                 transform-style: preserve-3d;
-                background-image: url(https://imgnvsk.vnanet.vn/MediaUpload/Org/2023/08/16/nhat116-15-41-38.jpg);
+                background-image: url(https://imgnvsk.vnanet.vn/MediaUpload/Org/2023/08/16/cd-va-sn-hcm4-5516-15-6-35.jpg);
               "
             ></div>
             <div
@@ -1081,7 +829,7 @@
               <div class="final-title">Yêu sách của<br />nhân dân An Nam</div>
             </div>
             <a
-              data-w-id="fd667a79-41f1-ea86-7302-08714cfbd740"
+              data-w-id="de4f00f8-bb2f-75ac-f183-5ffe4c44e746"
               href="https://disantutuongvatacpham.vercel.app/ban-an-che-do-thuc-dan-phap.html"
               class="row-2 a _02 customtrans w-inline-block"
               ><div class="final-year-block">
@@ -1089,36 +837,20 @@
               </div>
               <div class="final-title">Bản án chế độ<br />thực dân Pháp</div></a
             ><a
-              data-w-id="fd667a79-41f1-ea86-7302-08714cfbd748"
+              data-w-id="de4f00f8-bb2f-75ac-f183-5ffe4c44e74e"
               href="https://disantutuongvatacpham.vercel.app/ban-tuyen-ngon-doc-lap.html"
-              class="row-2 b _02 customtrans w-inline-block"
-            >
-              <div class="next-wrapper-menu">
-                <div class="next-text-inside">Tiếp theo</div>
-                <div
-                  data-is-ix2-target="1"
-                  class="orangey-oval"
-                  data-w-id="3ea3a419-84c2-e18f-4f7a-0d7707971448"
-                  data-animation-type="lottie"
-                  data-src="https://uploads-ssl.webflow.com/6074e88e167e5adf6d3d545c/6076f26cb1dfcc0c32401070_oval-orangey.json"
-                  data-loop="0"
-                  data-direction="1"
-                  data-autoplay="0"
-                  data-renderer="svg"
-                  data-default-duration="1"
-                  data-duration="0"
-                  data-ix2-initial-state="0"
-                ></div>
-              </div>
-              <div class="final-year-block">
+              class="row-2 b customtrans w-inline-block"
+              ><div class="final-year-block">
                 <div class="final-year">1945</div>
               </div>
               <div class="final-title">Bản tuyên ngôn<br />Độc lập</div></a
             ><a
-              data-w-id="fd667a79-41f1-ea86-7302-08714cfbd750"
-              href="https://disantutuongvatacpham.vercel.app/nhat-ky-trong-tu.html"
-              class="row-2 c customtrans w-inline-block"
-              ><div class="final-year-block">
+              data-w-id="de4f00f8-bb2f-75ac-f183-5ffe4c44e756"
+              href="https://disantutuongvatacpham.vercel.app/sua-doi-loi-lam-viec.html"
+              aria-current="page"
+              class="row-2 c _03 customtrans w-inline-block w--current"
+            >
+              <div class="final-year-block">
                 <div class="final-year"></div>
               </div>
               <div class="final-title"></div
@@ -1135,12 +867,12 @@
           >
             <div class="row-3 hodol">
               <div class="final-year-block">
-                <div class="final-year">1947</div>
+                <div class="final-year">1919</div>
               </div>
-              <div class="final-title">Sửa đổi<br />lối làm việc</div>
+              <div class="final-title">Yêu sách của<br />nhân dân An Nam</div>
             </div>
             <a
-              data-w-id="fd667a79-41f1-ea86-7302-08714cfbd761"
+              data-w-id="de4f00f8-bb2f-75ac-f183-5ffe4c44e767"
               href="https://disantutuongvatacpham.vercel.app/duong-kach-menh.html"
               class="row-3 a _02 customtrans w-inline-block"
               ><div class="final-year-block">
@@ -1148,9 +880,9 @@
               </div>
               <div class="final-title">Đường<br />Kách mệnh</div></a
             ><a
-              data-w-id="fd667a79-41f1-ea86-7302-08714cfbd769"
+              data-w-id="de4f00f8-bb2f-75ac-f183-5ffe4c44e76f"
               href="https://disantutuongvatacpham.vercel.app/loi-keu-goi-toan-quoc-khang-chien.html"
-              class="row-3 b _02 customtrans w-inline-block"
+              class="row-3 b customtrans w-inline-block"
               ><div class="final-year-block">
                 <div class="final-year">1946</div>
               </div>
@@ -1158,15 +890,14 @@
                 Lời kêu gọi<br />Toàn quốc kháng chiến
               </div></a
             ><a
-              data-w-id="fd667a79-41f1-ea86-7302-08714cfbd771"
+              data-w-id="de4f00f8-bb2f-75ac-f183-5ffe4c44e777"
               href="#"
-              aria-current="page"
-              class="row-3 c customtrans w-inline-block"
+              class="row-3 c _03 customtrans w-inline-block"
             >
               <!-- <div class="final-year-block">
-                <div class="final-year">1952</div>
+                <div class="final-year">2015</div>
               </div>
-              <div class="final-title">Tự phê bình<br />và phê bình</div> -->
+              <div class="final-title">paris<br />agreement</div> -->
             </a>
           </div>
         </div>
@@ -1182,10 +913,9 @@
       >
         <div class="finals-dots-container">
           <a
-            data-w-id="fd667a79-41f1-ea86-7302-08714cfbd77b"
+            data-w-id="de4f00f8-bb2f-75ac-f183-5ffe4c44e781"
             href="#"
             class="final-line-dots w-inline-block"
-            onclick="page(1)"
             ><div
               style="
                 transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
@@ -1200,14 +930,12 @@
               src="https://uploads-ssl.webflow.com/6074e88e167e5adf6d3d545c/608f8d416c9455a151d65470_Menu%20Active.svg"
               loading="lazy"
               style="width: 30px; height: 0px"
-              id="page1"
               alt=""
-              class="active-final-dot" />
+              class="active-final-dot act-1" />
             <div class="finale-dots"></div></a
           ><a
-            data-w-id="fd667a79-41f1-ea86-7302-08714cfbd780"
+            data-w-id="de4f00f8-bb2f-75ac-f183-5ffe4c44e786"
             href="#"
-            onclick="page(2)"
             class="final-line-dots w-inline-block"
             ><div
               style="
@@ -1222,15 +950,13 @@
             <img
               src="https://uploads-ssl.webflow.com/6074e88e167e5adf6d3d545c/608f8d416c9455a151d65470_Menu%20Active.svg"
               loading="lazy"
-              style="width: 30px; height: 30px"
+              style="width: 30px; height: 0px"
               alt=""
-              id="page2"
-              class="active-final-dot" />
+              class="active-final-dot act2" />
             <div class="finale-dots"></div></a
           ><a
-            data-w-id="fd667a79-41f1-ea86-7302-08714cfbd785"
+            data-w-id="de4f00f8-bb2f-75ac-f183-5ffe4c44e78b"
             href="#"
-            onclick="page(3)"
             class="final-line-dots w-inline-block"
             ><div
               style="
@@ -1245,10 +971,9 @@
             <img
               src="https://uploads-ssl.webflow.com/6074e88e167e5adf6d3d545c/608f8d416c9455a151d65470_Menu%20Active.svg"
               loading="lazy"
-              style="width: 30px; height: 0px"
+              style="width: 30px; height: 30px"
               alt=""
-              id="page3"
-              class="active-final-dot" />
+              class="active-final-dot act3" />
             <div class="finale-dots"></div
           ></a>
         </div>
@@ -1359,7 +1084,7 @@
         opacity: 1;
         width: 100%;
         position: fixed;
-        transform: translate3d(0px, -8120px, 0px);
+        transform: translate3d(0px, -3803px, 0px);
       "
       class="luxy"
     >
@@ -1388,7 +1113,7 @@
                   "
                   class="banner-title"
                 >
-                  Nhật Ký Trong Tù
+                  Sửa đổi lối làm việc
                 </h3>
                 <div
                   style="
@@ -1399,10 +1124,10 @@
                   "
                   class="year-block"
                 >
-                  <div class="small-year">1943</div>
+                  <div class="small-year">1947</div>
                   <div
-                    class="year-lottie _11pa"
-                    data-w-id="10575d51-d19d-b891-7477-4f6e8e7500b6"
+                    class="year-lottie _9kp"
+                    data-w-id="61bec787-2075-2239-3725-5be8086c9875"
                     data-animation-type="lottie"
                     data-src="https://uploads-ssl.webflow.com/6074e88e167e5adf6d3d545c/6074e88e167e5ac5e63d5562_year-ellipse%20lottie.json"
                     data-loop="0"
@@ -1419,488 +1144,436 @@
           </div>
         </div>
       </div>
-      <div class="section light wf-section">
+      <div class="section light wf-section" style="padding-top: 150px">
         <div class="container">
-          <div class="vertical-container _2015">
-            <div class="left-block">
-              <div class="ir-block">
-                <div
-                  class="water-gl title-intro intro-trigger"
-                  style="display: flex; align-items: center"
-                >
-                  <div>
-                    <div class="text-mask">
-                      <h1>Nhật ký</h1>
-                    </div>
-                    <div class="text-mask">
-                      <h2>trong tù</h2>
-                    </div>
-                  </div>
-                </div>
-                <div class="big-paragraph">
+          <div class="horizontal-container">
+            <div class="grid-chapter _1997">
+              <div
+                class="kyo-p water-gl title-intro intro-trigger"
+                style="background-image: none"
+              >
+                <div class="h1-chapter" style="opacity: 1">
                   <div class="text-mask">
-                    <p
-                      class="paragraph no-alterations"
-                      style="
-                        font-size: x-large;
-                        font-family: 'Lora', sans-serif;
-                        line-height: 1.6;
-                        color: #333;
-                        text-align: justify;
-                      "
-                    >
-                      Nhật ký trong tù là tập thơ chữ Hán gồm 134 bài[1] theo
-                      thể Đường luật do Hồ Chí Minh sáng tác trong thời gian bị
-                      chính quyền Tưởng Giới Thạch bắt giam ở Quảng Tây, Trung
-                      Quốc, từ ngày 29 tháng 8 năm 1942 đến ngày 10 tháng 9 năm
-                      1943.
-                    </p>
+                    <h1 class="h1-chapter ww" style="opacity: 1">
+                      Sửa đổi lối làm việc
+                    </h1>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="ir-block2">
-              <p
-                class="small-paragraph"
-                style="
-                  margin-top: 0;
-                  font-size: x-large;
-                  font-family: 'Lora', sans-serif;
-                  margin-left: 10%;
-                  max-width: 450px;
-                "
+              <div
+                id="w-node-c974cbfd-9dd9-2dc0-10ce-e0a16a64e4ba-393d54bc"
+                class="left-side"
               >
-                [2] Ngoài ra, phần cuối văn bản là bút ký đọc sách và bút ký đọc
-                báo ghi chép tóm tắt những thông tin quan trọng về chính trị,
-                quân sự, văn hóa quốc tế và Việt Nam đương thời.
+                <h4 class="h4-dark kp"></h4>
+                <h4 class="alt-title"></h4>
+                <img
+                  class="_1997-img2 luxy-el"
+                  src="https://tuyengiao.hagiang.gov.vn/upload/64711/20221122/grab6bff6sua_doi_loi_lam_viec_de_cuong_mot_cuoc_chinh_don_vi_dai.png"
+                  alt=""
+                  data-speed-y="5"
+                  sizes="(max-width: 767px) 281px, (max-width: 991px) 87.1875px, 790px"
+                  data-offset="-50"
+                  loading="eager"
+                  srcset="
+                    https://tuyengiao.hagiang.gov.vn/upload/64711/20221122/grab6bff6sua_doi_loi_lam_viec_de_cuong_mot_cuoc_chinh_don_vi_dai.png 500w,
+                    https://tuyengiao.hagiang.gov.vn/upload/64711/20221122/grab6bff6sua_doi_loi_lam_viec_de_cuong_mot_cuoc_chinh_don_vi_dai.png 790w
+                  "
+                  style="transform: translate3d(0px, 330.3px, 0px)"
+                />
+              </div>
+              <div
+                id="w-node-_1a4ed5f5-9561-8d47-9965-a98590d364da-393d54bc"
+                class="right-side"
+              >
+                <h4 class="h4-dark"></h4>
+                <h4 class="alt-title"></h4>
+                <div class="_1997-img1">
+                  <img
+                    src="https://nguonluc.com.vn/uploads/images/2022/10/27/sua-doi-loi-lam-viec-cua-dang-01-1666842131.jpg"
+                    loading="lazy"
+                    srcset="
+                      https://nguonluc.com.vn/uploads/images/2022/10/27/sua-doi-loi-lam-viec-cua-dang-01-1666842131.jpg 500w,
+                      https://nguonluc.com.vn/uploads/images/2022/10/27/sua-doi-loi-lam-viec-cua-dang-01-1666842131.jpg 720w
+                    "
+                    sizes="(max-width: 767px) 281px, (max-width: 991px) 420px, 720px"
+                    alt=""
+                    class="_1997-img1-copy"
+                  />
+                  <div
+                    data-offset="-50"
+                    data-speed-y="-5"
+                    data-w-id="cb0d8d3a-1769-ac5c-84ba-d1214a3b528c"
+                    style="
+                      height: 100%;
+                      width: 720px;
+                      background-image: url(https://nguonluc.com.vn/uploads/images/2022/10/27/sua-doi-loi-lam-viec-cua-dang-01-1666842131.jpg);
+                    "
+                    class="image-grow-load protos"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section wf-section" style="margin-top: 250px">
+        <div class="container">
+          <div class="padding-left">
+            <div
+              data-w-id="649a8cea-f8b1-7d07-20ed-78a4a3b227cd"
+              class="saol-paragraph _1970"
+            >
+              <div class="text-mask">
+                <p
+                  data-w-id="57989cfe-fff2-8f15-2dca-61c678fab9c3"
+                  style="
+                    transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1)
+                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                    transform-style: preserve-3d;
+                  "
+                  class="saol-paragraph"
+                >
+                  Mùa thu tháng 10/1947, khi nước Việt Nam
+                </p>
+              </div>
+              <div class="text-mask">
+                <p
+                  data-w-id="fe0e7c21-ea09-949b-5591-a4e203f41d2f"
+                  style="
+                    transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1)
+                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                    transform-style: preserve-3d;
+                  "
+                  class="saol-paragraph"
+                >
+                  dân chủ cộng hòa non trẻ mới ra đời được
+                </p>
+              </div>
+              <div class="text-mask">
+                <p
+                  data-w-id="ccf7d92d-194e-675c-b6f8-a463669d08de"
+                  style="
+                    transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1)
+                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                    transform-style: preserve-3d;
+                  "
+                  class="saol-paragraph"
+                >
+                  hai năm, Chủ tịch Hồ Chí Minh đã viết một
+                </p>
+              </div>
+              <div class="text-mask">
+                <p
+                  data-w-id="9e3d91f0-9046-817a-a016-dffb1df63430"
+                  style="
+                    transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1)
+                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                    transform-style: preserve-3d;
+                  "
+                  class="saol-paragraph"
+                >
+                  tác phẩm đặc biệt quan trọng, ký tên X.Y.Z,
+                </p>
+              </div>
+              <div class="text-mask">
+                <p
+                  data-w-id="5aaf1e0d-0419-b0ae-9238-10ffaff56ece"
+                  style="
+                    transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1)
+                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                    transform-style: preserve-3d;
+                  "
+                  class="saol-paragraph"
+                >
+                  để huấn luyện, giáo dục, rèn luyện phương
+                </p>
+              </div>
+              <div class="text-mask">
+                <p
+                  data-w-id="15a4c4e1-c883-bb12-acf5-094fe0464741"
+                  style="
+                    transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1)
+                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                    transform-style: preserve-3d;
+                  "
+                  class="saol-paragraph"
+                >
+                  pháp, đạo đức và phong cách làm việc cho cán bộ đảng viên. Đó
+                  là tác phẩm "Sửa đổi lối làm việc".
+                </p>
+              </div>
+            </div>
+            <div class="protocol-block">
+              <p class="small-paragraph _1970 kyoto">
+                Đến nay, những tư tưởng, đạo đức và phong cách của Chủ tịch Hồ
+                Chí Minh trong tác phẩm vẫn còn nguyên giá trị, có tính thời sự
+                cấp thiết và đang tiếp tục soi sáng công cuộc xây dựng, chỉnh
+                đốn Đảng để Đảng ta luôn vững mạnh.
               </p>
               <img
-                src="https://file1.dangcongsan.vn/DATA/0/2019/09/nhat_ky_trong_tu-15_20_44_264.png"
-                alt="Đường Kách mệnh"
+                src="http://baohoabinh.com.vn/Includes/NewsDetail/1_2018/dt_6120181650_1-bac-ho-28-11-2013(1).jpg"
                 loading="eager"
-                class="_2015-img1"
+                alt=""
+                class="_1997-img"
               />
-              <div class="_2015-img2">
-                <img
-                  src="https://baotanglichsu.vn/DataFiles/asset/upload/bao-vat-quoc-gia/2_2_1.jpg"
-                  loading="lazy"
-                  data-offset="-50"
-                  data-speed-y="5"
-                  alt=""
-                  class="_2015-img2-copy"
-                />
-                <div
-                  data-offset="-50"
-                  data-speed-y="5"
-                  data-w-id="18ecef3e-fb06-3ca2-004c-7ad419442ee9"
-                  style="
-                    height: 100%;
-                    transform: translate3d(0px, 762px, 0px);
-                    width: 650px;
-                    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Kh%C3%A1n_b%C3%A1o_lan.jpg/202px-Kh%C3%A1n_b%C3%A1o_lan.jpg);
-                  "
-                  class="image-grow-load glaciers luxy-el"
-                ></div>
+            </div>
+            <!-- <img
+              src="https://uploads-ssl.webflow.com/6074e88e167e5adf6d3d545c/6074e88e167e5a50323d54c6_bill.jpg"
+              loading="lazy"
+              data-speed-y="5"
+              data-offset="-200"
+              alt=""
+              class="_1970-img3 luxy-el"
+              style="transform: translate3d(0px, 180.3px, 0px)"
+            /> -->
+          </div>
+        </div>
+      </div>
+      <div
+        class="section _1997-no-overlap no-overflow wf-section"
+        style="padding: 0 20px; padding-bottom: 50px"
+      >
+        <div class="container" style="margin-bottom: 50px">
+          <div
+            class="kyo-p water-gl title-intro intro-trigger"
+            style="background-image: none; max-width: 500px"
+          >
+            <div class="h1-chapter" style="opacity: 1">
+              <div class="text-mask" style="overflow: visible">
+                <h1 class="h1-chapter ww" style="opacity: 1; color: #cfcfcf">
+                  Nội dung
+                </h1>
               </div>
-              <!-- <p class="small-paragraph _2015">
-                The other study, led by Ian Joughin of the University of
-                Washington, used a computer model to compare observations of
-                recent melting with projected melt scenarios to see which
-                matches reality best so far.
-              </p> -->
             </div>
           </div>
         </div>
-      </div>
-      <div class="section animation-overflow wf-section">
-        <div class="animation-container static">
+        <div
+          class="for-marquee kp"
+          style="width: 100%; justify-content: center"
+        >
           <div
-            data-speed-x="0"
-            data-horizontal="1"
-            class="large-text-animate luxy-el"
             style="
-              transform: translate3d(-812px, 162.4px, 0px);
-              font-size: 280px;
+              text-transform: none;
+              text-align: left;
+              margin-right: 5px;
+              width: 80%;
+              font-size: 24px;
             "
           >
-            Nhật ký
+            &nbsp;&nbsp;&bull;Thứ nhất, Bác dạy phải nhận thức và thực hiện có
+            hiệu quả một nguyên tắc cơ bản trong xây dựng Đảng là phê bình và tự
+            phê bình. Phải khắc phục cho được tình trạng hữu khuynh, né tránh
+            cũng như thiếu xây dựng trong phê bình, thiếu trung thực trong tự
+            phê bình. <br />
+            <br />
           </div>
+        </div>
+        <div
+          class="for-marquee kp"
+          style="width: 100%; justify-content: center"
+        >
           <div
-            data-speed-x="6"
-            data-horizontal="1"
-            class="large-text-animate luxy-el"
             style="
-              transform: translate3d(812px, 162.4px, 0px);
-              font-size: 280px;
+              margin-right: 5px;
+              font-size: 24px;
+              text-transform: none;
+              width: 80%;
+              text-align: left;
             "
           >
-            trong tù
+            &nbsp;&nbsp;&bull;Thứ hai, Bác chỉ rõ, đảng viên cán bộ phải nhận
+            thức đúng đắn vai trò của lý luận và đổi mới việc giáo dục lý luận
+            cho cán bộ, đảng viên; phải khắc phục cho được bệnh coi thường lý
+            luận, lý luận suông, sách vở, giáo điều, phải học tập lý luận chính
+            trị một cách thiết thực, tránh hình thức, qua lọa, đại khái…
+            <br /><br />
+          </div>
+        </div>
+        <div
+          class="for-marquee kp"
+          style="width: 100%; justify-content: center"
+        >
+          <div
+            style="
+              margin-right: 5px;
+              font-size: 24px;
+              width: 80%;
+              text-transform: none;
+              text-align: left;
+            "
+          >
+            &nbsp;&nbsp;&bull;Thứ ba,Người đề cao vai trò của đạo đức cách mạng
+            và việc tư dưỡng đạo đức của cán bộ, đảng viên, khắc phục cho được
+            các bệnh tham ô, lãng phí. Người đảng viên, người cán bộ tốt muốn
+            trở nên người cách mạng chân chính theo Bác không có gì khó. Tóm tắt
+            lại có 5 điều răn: Nhân, Nghĩa, Trí, Dũng, Liêm. <br /><br />
+          </div>
+        </div>
+        <div
+          class="for-marquee kp"
+          style="width: 100%; justify-content: center"
+        >
+          <div
+            style="
+              margin-right: 5px;
+              font-size: 24px;
+              width: 80%;
+              text-transform: none;
+              text-align: left;
+            "
+          >
+            &nbsp;&nbsp;&bull;Thứ tư, Bác chỉ ra những vấn đề thuộc về vai trò
+            quyết định của đội ngũ cán bộ và phải đổi mới cách đánh giá bồi
+            dưỡng và sử dụng cán bộ. Sử dụng cán bộ là sử dụng người có tài, có
+            đức, có cách phẩm chấn cần, kiệm, liêm, chính. Những người như vậy
+            phải được bồi dưỡng và sử dụng. <br /><br />
+          </div>
+        </div>
+        <div
+          class="for-marquee kp"
+          style="width: 100%; justify-content: center"
+        >
+          <div
+            style="
+              margin-right: 5px;
+              font-size: 24px;
+              width: 80%;
+              text-transform: none;
+              text-align: left;
+            "
+          >
+            &nbsp;&nbsp;&bull;Thứ năm, vấn đề cách lãnh đạo và đổi mới phương
+            thức lãnh đạo theo hướng ra quyết định đúng và kịp thời, tổ chức
+            thực hiện đúng, khéo, giám sát, kiểm tra chặt chẽ, đúng đắn.
+            <br /><br />
+          </div>
+        </div>
+        <div
+          class="for-marquee kp"
+          style="width: 100%; justify-content: center"
+        >
+          <div
+            style="
+              margin-right: 5px;
+              font-size: 24px;
+              text-transform: none;
+              width: 80%;
+              text-align: left;
+            "
+          >
+            &nbsp;&nbsp;&bull;Thứ sáu, tầm quan trọng của công tác tuyên truyền
+            giáo dục. Tầm quan trọng và đổi mới công tác tuyên truyền, giáo dục
+            mang tính thuyết phục, nhất là phải đổi mới cách nói và viết của cán
+            bộ, đảng viên, phải khắc phục thói ba hoa, sáo rỗng, nói không đi
+            đôi với làm.
           </div>
         </div>
       </div>
-      <div class="section wf-section" style="padding-top: 0">
+      <div class="section light kp wf-section" style="padding-top: 100px">
         <div class="container">
-          <div data-w-id="Div Block 12" class="h2-block">
-            <div class="text-mask _101">
-              <h2
-                data-w-id="Heading"
-                style="
-                  transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1)
-                    rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                  transform-style: preserve-3d;
-                "
-                class="h2-light pa"
-              >
-                Lịch Sử
-              </h2>
+          <div class="fossil-block _2">
+            <div
+              data-w-id="c99a00bd-fe8a-de4d-56a8-fa91d371c509"
+              class="div-block-4"
+            >
+              <div class="text-mask">
+                <h2
+                  data-w-id="4f8f64fc-b886-34d6-7d7e-28d4159f35ff"
+                  style="
+                    transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1)
+                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                    transform-style: preserve-3d;
+                  "
+                  class="h2-dark-87 cold-war"
+                >
+                  Giá trị tác phẩm
+                </h2>
+              </div>
             </div>
           </div>
-          <div class="w-layout-grid grid-1981">
-            <div
-              id="w-node-_6427394c-f19d-c462-a47e-3fd41c97ad47-573d54ce"
-              data-w-id="6427394c-f19d-c462-a47e-3fd41c97ad47"
-              class="text-wrapper"
-            >
-              <div class="text-mask">
-                <p
-                  data-w-id="01be319a-0f0f-3163-af5d-07fb7d8c6c22"
-                  style="
-                    transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1)
-                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                    transform-style: preserve-3d;
-                    font-size: medium;
-                    margin-bottom: 10px;
-                  "
-                  class="saol-medium-par facts"
-                >
-                  Giữa tháng 8 năm 1942, dưới danh nghĩa là đại biểu của Việt
-                  Nam Độc lập Đồng minh Hội và Quốc tế phản xâm lược Việt Nam
-                  phân hội, Nguyễn Ái Quốc từ Pác Bó sang Trùng Khánh, Trung
-                  Quốc để kêu gọi sự ủng hộ của các nước Khối Đồng Minh đối với
-                  Mặt trận Việt Minh trong công cuộc đánh đuổi Pháp và Nhật. Khi
-                  đi, Nguyễn Ái Quốc mang theo tấm danh thiếp, ở giữa in tên Hồ
-                  Chí Minh, một bên in "Tân Văn ký giả", một bên in "Việt Nam -
-                  Hoa kiều". Tên gọi Hồ Chí Minh chính thức được sử dụng từ đây.
-                  Ngày 27 tháng 8, trên đường từ Ba Mông, huyện Tĩnh Tây tới
-                  huyện lỵ Bình Mã (nay là Điền Đông) để bắt xe đi Trùng Khánh,
-                  Hồ Chí Minh bị chính quyền địa phương bắt ở thị trấn Túc Vinh,
-                  huyện Thiên Bảo (nay là Đức Bảo) vì bị tình nghi là gián điệp.
-                  Từ đây, Hồ Chí Minh đã trải qua hành trình gian nan "Quảng Tây
-                  giải khắp mười ba huyện/Mười tám nhà lao đã ở qua". Chính
-                  trong bối cảnh này, tập thơ Nhật ký trong tù đã ra đời.
-                </p>
-              </div>
-              <div class="text-mask">
-                <p
-                  data-w-id="40efc013-a516-fca5-5de8-094f94c237dc"
-                  style="
-                    transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1)
-                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                    transform-style: preserve-3d;
-                    font-size: medium;
-                    margin-bottom: 10px;
-                  "
-                  class="saol-medium-par facts"
-                >
-                  (II) Đối với người(5): Với từng người thì khoan thứ - Với đoàn
-                  thể thì nghiêm - Có lòng bày vẽ cho người - Trực mà không táo
-                  bạo - Hay xem xét người
-                </p>
-              </div>
-              <div class="text-mask">
-                <p
-                  data-w-id="03d91c07-1f8f-37c1-b5dd-0b5628ee7d5e"
-                  style="
-                    transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1)
-                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                    transform-style: preserve-3d;
-                    font-size: medium;
-                  "
-                  class="saol-medium-par facts"
-                >
-                  (III) Đối với công việc(4): Xem xét hoàn cảnh kỹ càng - Quyết
-                  đoán - Dũng cảm - Phục tùng đoàn thể
-                </p>
-              </div>
-            </div>
-            <div
-              id="w-node-_01be319a-0f0f-3163-af5d-07fb7d8c6c26-573d54ce"
-              class="line-between"
-              style="grid-row-start: span 4; grid-row-end: span 4"
-            ></div>
-            <div class="c02-fact-block facts">
-              <div class="fact-text">Phần <br />I</div>
-              <p class="small-paragraph facts">Bối cảnh ra đời</p>
-              <div class="inner-circle-border"></div>
-            </div>
-            <div
-              id="w-node-_01be319a-0f0f-3163-af5d-07fb7d8c6c2f-573d54ce"
-              class="c02-fact-block facts"
-            >
-              <div class="fact-text">
-                Phần <br />
-                II
-              </div>
-              <p class="small-paragraph facts">
-                Nội dung
-                <br />
-                <!-- “Văn chương và hy vọng sách này chỉ ở trong hai chữ: Cách mệnh! Cách mệnh!! Cách mệnh!!!” -->
-              </p>
-              <div class="inner-circle-border"></div>
-            </div>
-            <div
-              id="w-node-_7c2b0ae4-7d80-dc0f-b9d3-d40df00bb8a5-573d54ce"
-              data-w-id="7c2b0ae4-7d80-dc0f-b9d3-d40df00bb8a5"
-              class="text-wrapper"
-            >
-              <div class="text-mask">
-                <p
-                  data-w-id="01be319a-0f0f-3163-af5d-07fb7d8c6c37"
-                  style="
-                    transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1)
-                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                    transform-style: preserve-3d;
-                    margin-bottom: 10px;
-                    font-size: large;
-                  "
-                  class="saol-medium-par facts"
-                >
-                  Một số bài thơ trích từ "Nhật ký trong tù":
-                </p>
-              </div>
-              <div class="text-mask">
-                <p
-                  data-w-id="01be319a-0f0f-3163-af5d-07fb7d8c6c37"
-                  style="
-                    transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1)
-                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                    transform-style: preserve-3d;
-                    margin-bottom: 10px;
-                    font-size: large;
-                  "
-                  class="saol-medium-par facts"
-                >
-                  (I) Vọng nguyệt
-                </p>
-              </div>
-              <div class="text-mask">
-                <p
-                  data-w-id="01be319a-0f0f-3163-af5d-07fb7d8c6c37"
-                  style="
-                    transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1)
-                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                    transform-style: preserve-3d;
-                    margin-bottom: 10px;
-                    font-size: large;
-                  "
-                  class="saol-medium-par facts"
-                >
-                  (II) Tức cảnh Pác Bó
-                </p>
-              </div>
-              <div class="text-mask">
-                <p
-                  data-w-id="01be319a-0f0f-3163-af5d-07fb7d8c6c37"
-                  style="
-                    transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1)
-                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                    transform-style: preserve-3d;
-                    margin-bottom: 10px;
-                    font-size: large;
-                  "
-                  class="saol-medium-par facts"
-                >
-                  (III) Chiều tối
-                </p>
-              </div>
-              <div class="text-mask">
-                <p
-                  data-w-id="01be319a-0f0f-3163-af5d-07fb7d8c6c37"
-                  style="
-                    transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1)
-                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                    transform-style: preserve-3d;
-                    margin-bottom: 10px;
-                    font-size: large;
-                  "
-                  class="saol-medium-par facts"
-                >
-                  (IV) Đêm thu
-                </p>
-              </div>
-              <div class="text-mask">
-                <p
-                  data-w-id="01be319a-0f0f-3163-af5d-07fb7d8c6c37"
-                  style="
-                    transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1)
-                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                    transform-style: preserve-3d;
-                    margin-bottom: 10px;
-                    font-size: large;
-                  "
-                  class="saol-medium-par facts"
-                >
-                  &bull; &bull; &bull;
-                </p>
-              </div>
-            </div>
-            <div
-              id="w-node-c7c3d98f-6e2e-7b4b-efde-6eaa4b3ec35e-573d54ce"
-              data-w-id="c7c3d98f-6e2e-7b4b-efde-6eaa4b3ec35e"
-              class="text-wrapper"
-            >
-              <div class="text-mask">
-                <p
-                  data-w-id="01be319a-0f0f-3163-af5d-07fb7d8c6c39"
-                  style="
-                    transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1)
-                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                    transform-style: preserve-3d;
-                    font-size: medium;
-                    margin-bottom: 10px;
-                  "
-                  class="saol-medium-par facts"
-                >
-                  Đi khắp đèo cao, khắp núi cao,<br />
-                  Ngờ đâu đường phẳng lại lao đạo!<br />
-                  Núi cao gặp hồ mà vô sự,<br />
-                  Đường phẳng gặp người bị tống lao?!<br />
-                  <br />
-                  Ta là đại biểu dân Việt Nam<br />
-                  Tìm đến Trung Hoa để hội đảm<br />
-                  Ai ngõ đất bằng gây sóng gió,<br />
-                  Phải làm "khách quý" ở nhà giam!<br />
-                  <br />
-                  Ta người ngay thẳng, lòng trong trắng,<br />
-                  Lai bị tình nghi là Hán gian;<br />
-                  Xử thế từ xưa không phải dễ,<br />
-                  Mà nay, xử thế khó khăn hơn.
-                </p>
-              </div>
-            </div>
-            <div
-              id="w-node-_01be319a-0f0f-3163-af5d-07fb7d8c6c3b-573d54ce"
-              class="c02-fact-block facts water-gl"
-            >
-              <div class="fact-text">Đường đời hiểm trở</div>
-              <p class="small-paragraph facts"></p>
-              <div class="inner-circle-border"></div>
-            </div>
-            <div
-              id="w-node-_01be319a-0f0f-3163-af5d-07fb7d8c6c2f-573d54ce"
-              class="c02-fact-block facts"
-            >
-              <div class="fact-text">Giải đi sớm</div>
-              <p class="small-paragraph facts"></p>
-              <div class="inner-circle-border"></div>
-            </div>
-            <div
-              id="w-node-_7c2b0ae4-7d80-dc0f-b9d3-d40df00bb8a5-573d54ce"
-              data-w-id="7c2b0ae4-7d80-dc0f-b9d3-d40df00bb8a5"
-              class="text-wrapper"
-            >
-              <div class="text-mask">
-                <p
-                  data-w-id="01be319a-0f0f-3163-af5d-07fb7d8c6c37"
-                  style="
-                    transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1)
-                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                    transform-style: preserve-3d;
-                    font-size: medium;
-                    margin-bottom: 10px;
-                  "
-                  class="saol-medium-par facts"
-                >
-                  Gà gáy một lần đêm chửa tan<br />
-                  Chòm sao nâng nguyệt vượt lên ngàn;<br />
-                  Người đi cất bước trên đường thẳm,<br />
-                  Rát mặt, đêm thu, trận gió hàn.<br />
-                  Phương đông màu trắng chuyển sang hồng,<br />
-                  Bóng tối đêm tàn, quét sạch không;<br />
-                  Hơi ấm bao la trùm vũ trụ,<br />
-                  Người đi, thi hứng bỗng thêm nồng.
-                </p>
-              </div>
-            </div>
+          <div
+            class="fossil-block _2"
+            style="margin-left: 0; justify-content: center"
+          >
+            <p class="small-paragraph cold-war">
+              Tác phẩm chỉ ra những mặt mạnh, mặt yếu (ưu khuyết điểm, những căn
+              “bệnh”) của cán bộ, từ đó giúp cho công tác tổ chức cán bộ phát
+              huy thế mạnh và khắc phục những hạn chế họ.
+            </p>
+            <p class="small-paragraph cold-war">
+              Tác phẩm nhắc nhở mỗi người chúng ta cho dù trên bất kỳ công việc
+              nào cũng không ngừng phải rèn luyện, tu dưỡng, trau dồi phẩm chất
+              đạo đức, tác phong, lối sống, lề lối làm việc.
+            </p>
+            <p class="small-paragraph cold-war">
+              Đối với công việc mỗi cán bộ đảng viên phải có tinh thần trách
+              nhiệm, không ngừng nâng cao ý thức tự giác, học hỏi.
+            </p>
+          </div>
+          <div
+            class="fossil-block _2"
+            style="margin-left: 0; justify-content: center"
+          >
+            <p class="small-paragraph cold-war">
+              Cán bộ, đảng viên phải giám chịu trách nhiệm trước công việc của
+              mình, sẵn sàng sửa chữa những sai lầm khuyết điểm.
+            </p>
+            <p class="small-paragraph cold-war">
+              Giải quyết công việc cần linh hoạt, uyển chuyển, không dập khuôn,
+              không xa rời thực tế.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="section light wf-section" style="padding-top: 100px">
+        <div class="container">
+          <div class="big-text hollow-text-stroke">
+            <!-- In March 2001, shortly after taking office, President George W. Bush
+            announced the United States would not implement the Kyoto Protocol, -->
+          </div>
+          <div class="big-text flawed">
+            Đến nay những điều Chủ tịch Hồ Chí Minh chỉ ra và nhấn mạnh phải
+            “sửa đổi” trong tác phẩm "Sửa đổi lối làm việc" vẫn luôn là nền tảng
+            tư tưởng và kim chỉ nam hành động cho toàn Đảng và mỗi Đảng viên.
+          </div>
+          <div class="_1997-img3-copy">
+            <img
+              src="http://quandoan8.org.vn/uploads/images/T%C6%B0%20t%C6%B0%E1%BB%9Fng%20H%E1%BB%93%20Ch%C3%AD%20Minh/Tac%20pham%20Sua%20doi%20loi%20lam%20viec/21766587_1841454542534896_5091933651158129565_n.jpg"
+              loading="eager"
+              data-speed-y="5"
+              data-offset="-400"
+              alt=""
+              class="_1997-img3 luxy-el"
+              style="transform: translate3d(0px, -19.7px, 0px)"
+            />
           </div>
         </div>
       </div>
       <footer id="footer" class="footer wf-section">
         <div class="footer-container">
-          <button
-            style="
-              margin: 20px;
-              background-color: rgb(1, 254, 1);
-              color: #000;
-              padding: 10px 20px;
-              border: none;
-              border-radius: 15px;
-              cursor: pointer;
-            "
-            onclick="openModal()"
-          >
-            Ôn tập kiến thức
-          </button>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              width: 100%;
-              margin: 50px 0;
-            "
-          >
-            <hr style="border: 2px solid white; width: 40%" />
-            <span>HOẶC</span>
-            <hr style="border: 2px solid white; width: 40%" />
-          </div>
-          <div class="next-mask">
-            <div
-              class="chapter-number footing-up"
-              style="
-                transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1)
-                  rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                transform-style: preserve-3d;
-                opacity: 1;
-                margin-bottom: 50px;
-              "
-            >
-              Tác phẩm kế tiếp
-            </div>
-          </div>
           <a
-            data-w-id="06c7eda8-3efd-9d5a-125d-fc07c3dcacad"
-            href="https://disantutuongvatacpham.vercel.app/ban-tuyen-ngon-doc-lap.html"
+            data-w-id="a9da73cf-c3ed-7931-d890-f98b0b593293"
+            href="#"
             class="footer-link customtrans w-inline-block"
-          >
-            <div class="text-mask foot-top">
-              <h3
-                class="footer-next-title top"
-                style="
-                  transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
-                    rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                  transform-style: preserve-3d;
-                "
-              >
-                Bản tuyên ngôn
-              </h3>
-            </div>
-            <div class="text-mask foot-bot">
-              <h3
-                class="footer-next-title index-0"
-                style="
-                  transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
-                    rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                  transform-style: preserve-3d;
-                "
-              >
-                Độc lập
-              </h3>
-            </div></a
-          >
+            ><button
+              style="
+                margin: 20px;
+                background-color: rgb(1, 254, 1);
+                color: #000;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 15px;
+                cursor: pointer;
+              "
+              onclick="openModal()"
+            >
+              Ôn tập kiến thức
+            </button>
+          </a>
         </div>
         <div class="scroll-down-block">
           <a
-            href="https://disantutuongvatacpham.vercel.app/ban-tuyen-ngon-doc-lap.html"
+            href="https://disantutuongvatacpham.vercel.app/sua-doi-loi-lam-viec.html"
             class="up-next-link w-inline-block"
             ><img
               src="https://uploads-ssl.webflow.com/6074e88e167e5adf6d3d545c/6074e88e167e5a74263d5560_w-click.svg"
@@ -1916,9 +1589,10 @@
       class="slider-hover"
       style="
         will-change: transform;
-        transform: translate3d(13.409vw, 49.994vh, 0px) scale3d(1, 1, 1)
+        transform: translate3d(13.969vw, -50vh, 0px) scale3d(1, 1, 1)
           rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
         transform-style: preserve-3d;
+        opacity: 0;
       "
     >
       <div
@@ -1935,13 +1609,22 @@
         data-duration="0"
       ></div>
     </div>
-    <div class="cursor"></div>
+    <div
+      class="cursor"
+      style="
+        visibility: inherit;
+        opacity: 1;
+        top: 7159px;
+        left: 1271px;
+        transform: matrix(0, 0, 0, 0, 0, 0);
+      "
+    ></div>
     <div
       data-w-id="140c2eda-f1df-49d7-1668-ce38ab80b59f"
       class="follow-mouse"
       style="
         will-change: transform;
-        transform: translate3d(13.413vw, 49.994vh, 0px) scale3d(1, 1, 1)
+        transform: translate3d(13.969vw, -50vh, 0px) scale3d(1, 1, 1)
           rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
         transform-style: preserve-3d;
       "
@@ -2134,6 +1817,11 @@ window.onload = function() {
 };                         
 </script>
 -->
+    <!-- Nav Menu Chapters -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <!-- Luxy JS -->
     <script src="https://min30327.github.io/luxy.js/dist/js/luxy.js"></script>
     <script>
@@ -2206,20 +1894,6 @@ window.onload = function() {
         }, 1000);
       });
     </script>
-    <script>
-      $(".customtrans").click(function (e) {
-        e.preventDefault();
-        var linkUrl = $(this).attr("href");
-        setTimeout(
-          function (url) {
-            window.location = url;
-          },
-          1000,
-          linkUrl
-        );
-      });
-    </script>
-
     <div
       id="testModal"
       style="
@@ -2274,24 +1948,25 @@ window.onload = function() {
           <form id="quizForm">
             <div class="question1">
               <p>
-                1. Tập thơ "Nhật ký trong tù" được Chủ tịch Hồ Chí Minh viết
-                trong hoàn cảnh nào?
+                1: Tác phẩm "Sửa đổi lối làm việc" được Chủ tịch Hồ Chí Minh
+                viết trong hoàn cảnh nào?
               </p>
               <label style="font-weight: normal"
-                ><input type="radio" name="q1" value="A" /> A. Khi Người hoạt
-                động cách mạng ở nước ngoài
+                ><input type="radio" name="q1" value="A" /> A. Trong giai đoạn
+                kháng chiến chống Pháp, khi cuộc kháng chiến bước vào giai đoạn
+                cam go.
               </label>
               <label style="font-weight: normal"
-                ><input type="radio" name="q1" value="B" /> B. Khi Người bị giam
-                cầm trong các nhà tù của Tưởng Giới Thạch
-              </label>
-              <label style="font-weight: normal"
-                ><input type="radio" name="q1" value="C" /> C. Khi Người lãnh
-                đạo cuộc kháng chiến chống Pháp</label
+                ><input type="radio" name="q1" value="B" /> B. Sau khi Cách mạng
+                tháng Tám thành công, nước Việt Nam độc lập.</label
               >
               <label style="font-weight: normal"
-                ><input type="radio" name="q1" value="D" /> D. Khi Người xây
-                dựng chủ nghĩa xã hội ở miền Bắc Việt Nam
+                ><input type="radio" name="q1" value="C" /> C. Khi đất nước bước
+                vào thời kỳ xây dựng chủ nghĩa xã hội.</label
+              >
+              <label style="font-weight: normal"
+                ><input type="radio" name="q1" value="D" /> D. Trong bối cảnh
+                đổi mới đất nước, hội nhập quốc tế.
               </label>
               <div
                 id="answer1"
@@ -2300,43 +1975,48 @@ window.onload = function() {
             </div>
             <div class="question2" style="margin-top: 20px">
               <p>
-                2. Bài thơ nào sau đây KHÔNG nằm trong tập thơ "Nhật ký trong
-                tù"?
+                2: Đâu là nội dung cốt lõi mà Chủ tịch Hồ Chí Minh muốn đề cập
+                đến trong tác phẩm "Sửa đổi lối làm việc"?
               </p>
               <label style="font-weight: normal"
-                ><input type="radio" name="q2" value="A" /> A. "Ngắm trăng"
-              </label>
+                ><input type="radio" name="q2" value="A" /> A. Nâng cao trình độ
+                lý luận chính trị cho cán bộ, đảng viên.</label
+              >
               <label style="font-weight: normal"
-                ><input type="radio" name="q2" value="B" /> B. "Đi đường"
-              </label>
+                ><input type="radio" name="q2" value="B" /> B. Chấn chỉnh tác
+                phong, lề lối làm việc của cán bộ, đảng viên.</label
+              >
               <label style="font-weight: normal"
-                ><input type="radio" name="q2" value="C" /> C. "Bài ca đi cấy"
-              </label>
+                ><input type="radio" name="q2" value="C" /> C. Xây dựng đạo đức
+                cách mạng cho cán bộ, đảng viên.</label
+              >
               <label style="font-weight: normal"
-                ><input type="radio" name="q2" value="D" /> D. "Lai Tân"
-              </label>
+                ><input type="radio" name="q2" value="D" /> D. Đổi mới phương
+                thức lãnh đạo của Đảng.</label
+              >
               <div
                 id="answer2"
                 style="margin-top: 10px; font-style: italic; font-weight: bold"
               ></div>
             </div>
             <div class="question3" style="margin-top: 20px">
-              <p>3. Chủ đề chính của tập thơ "Nhật ký trong tù" là gì?</p>
+              <p>
+                3: Theo Hồ Chí Minh, căn bệnh nào sau đây là nguy hiểm nhất
+                trong lối làm việc của cán bộ, đảng viên?
+              </p>
               <label style="font-weight: normal">
-                <input type="radio" name="q3" value="A" /> A. Tình yêu quê hương
-                đất nước
+                <input type="radio" name="q3" value="A" /> A. Quan liêu, giấy tờ
               </label>
               <label style="font-weight: normal">
-                <input type="radio" name="q3" value="B" /> B. Ý chí kiên cường
-                của người cách mạng
+                <input type="radio" name="q3" value="B" /> B. Tham ô, lãng phí.
               </label>
               <label style="font-weight: normal">
-                <input type="radio" name="q3" value="C" /> C. Phản ánh hiện thực
-                xã hội Trung Quốc thời Tưởng Giới Thạch
-              </label>
-              <label style="font-weight: normal">
-                <input type="radio" name="q3" value="D" /> D. Tất cả các đáp án
+                <input type="radio" name="q3" value="C" /> C. Tất cả các đáp án
                 trên
+              </label>
+              <label style="font-weight: normal">
+                <input type="radio" name="q3" value="D" /> D. Chủ quan, duy ý
+                chí.
               </label>
               <div
                 id="answer3"
@@ -2345,22 +2025,25 @@ window.onload = function() {
             </div>
             <div class="question4" style="margin-top: 20px">
               <p>
-                4. Phong cách thơ của Chủ tịch Hồ Chí Minh trong "Nhật ký trong
-                tù" như thế nào?
+                4: Hồ Chí Minh nhấn mạnh điều gì trong mối quan hệ giữa cán bộ,
+                đảng viên với quần chúng nhân dân?
               </p>
               <label style="font-weight: normal">
-                <input type="radio" name="q4" value="A" /> A. Lãng mạn, trữ tình
+                <input type="radio" name="q4" value="A" /> A. Cán bộ, đảng viên
+                phải là người lãnh đạo, chỉ đạo quần chúng nhân dân
               </label>
               <label style="font-weight: normal">
-                <input type="radio" name="q4" value="B" /> B. Hóm hỉnh, châm
-                biếm
+                <input type="radio" name="q4" value="B" /> B. Cán bộ, đảng viên
+                phải gần gũi, gắn bó, lắng nghe ý kiến của quần chúng nhân dân.
               </label>
               <label style="font-weight: normal">
-                <input type="radio" name="q4" value="C" /> C. Giản dị, gần gũi
+                <input type="radio" name="q4" value="C" /> C. Cán bộ, đảng viên
+                phải tuyên truyền, vận động quần chúng nhân dân thực hiện chủ
+                trương của Đảng
               </label>
               <label style="font-weight: normal">
-                <input type="radio" name="q4" value="D" /> D. Tất cả các đáp án
-                trên
+                <input type="radio" name="q4" value="D" /> D. Cán bộ, đảng viên
+                phải học hỏi kinh nghiệm từ quần chúng nhân dân
               </label>
               <div
                 id="answer4"
@@ -2369,24 +2052,24 @@ window.onload = function() {
             </div>
             <div class="question5" style="margin-top: 20px">
               <p>
-                5. Giá trị lớn nhất mà tập thơ "Nhật ký trong tù" mang lại là
-                gì?
+                5: Theo Hồ Chí Minh, phương pháp tự phê bình và phê bình có vai
+                trò như thế nào?
               </p>
               <label style="font-weight: normal">
-                <input type="radio" name="q5" value="A" /> A. Giá trị nghệ thuật
-                cao
+                <input type="radio" name="q5" value="A" /> A. Là công cụ để
+                trừng phạt những cán bộ, đảng viên có sai phạm.
               </label>
               <label style="font-weight: normal">
-                <input type="radio" name="q5" value="B" /> B. Giá trị lịch sử to
-                lớn
+                <input type="radio" name="q5" value="B" /> B. Là biện pháp để
+                răn đe, giáo dục cán bộ, đảng viên.
               </label>
               <label style="font-weight: normal">
-                <input type="radio" name="q5" value="C" /> C. Giá trị nhân văn
-                sâu sắc
+                <input type="radio" name="q5" value="C" /> C. Là cách để nâng
+                cao uy tín của lãnh đạo
               </label>
               <label style="font-weight: normal">
-                <input type="radio" name="q5" value="D" /> D. Tất cả các đáp án
-                trên
+                <input type="radio" name="q5" value="D" /> D. Là vũ khí để sửa
+                chữa sai lầm, khuyết điểm, giúp cán bộ, đảng viên tiến bộ.
               </label>
               <div
                 id="answer5"
@@ -2454,10 +2137,10 @@ window.onload = function() {
       function checkAnswers() {
         const form = document.getElementById("quizForm");
         const answers = {
-          q1: "B",
+          q1: "A",
           q2: "B",
           q3: "C",
-          q4: "D",
+          q4: "B",
           q5: "D",
         };
         let score = 0;
@@ -2469,6 +2152,7 @@ window.onload = function() {
             score++;
           }
           const inputs = form.querySelectorAll(`input[name="${question}"]`);
+          // Vô hiệu hóa từng input
           inputs.forEach((input) => {
             input.disabled = true;
           });
@@ -2476,28 +2160,11 @@ window.onload = function() {
         document.getElementById(
           "result"
         ).innerHTML = `Bạn đã trả lời đúng <b>${score}/5</b> câu hỏi.`;
-        document.getElementById("answer1").innerHTML = `Đáp án đúng là: B`;
+        document.getElementById("answer1").innerHTML = `Đáp án đúng là: A`;
         document.getElementById("answer2").innerHTML = `Đáp án đúng là: B`;
         document.getElementById("answer3").innerHTML = `Đáp án đúng là: C`;
-        document.getElementById("answer4").innerHTML = `Đáp án đúng là: D`;
+        document.getElementById("answer4").innerHTML = `Đáp án đúng là: B`;
         document.getElementById("answer5").innerHTML = `Đáp án đúng là: D`;
-      }
-    </script>
-    <script>
-      function page(page) {
-        if (page == 1) {
-          document.getElementById("page1").style.height = "30px";
-          document.getElementById("page2").style.height = "0px";
-          document.getElementById("page3").style.height = "0px";
-        } else if (page == 2) {
-          document.getElementById("page1").style.height = "0px";
-          document.getElementById("page2").style.height = "30px";
-          document.getElementById("page3").style.height = "0px";
-        } else if (page == 3) {
-          document.getElementById("page1").style.height = "0px";
-          document.getElementById("page2").style.height = "0px";
-          document.getElementById("page3").style.height = "30px";
-        }
       }
     </script>
   </body>
